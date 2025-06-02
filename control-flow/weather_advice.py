@@ -1,10 +1,12 @@
-temperature = int(input("Enter the temperature in Celsius: "))
+# Ask the user for the current weather condition
+weather = input("What's the weather like today? (sunny/rainy/cold): ").lower()
 
-if temperature < 10:
-    print("Wear a heavy jacket.")
-elif 10 <= temperature < 20:
-    print("Wear a light jacket or sweater.")
-elif 20 <= temperature < 30:
-    print("Wear a t-shirt and jeans.")
+# Provide clothing recommendations based on input
+if weather == "sunny":
+    print("Wear a t-shirt and sunglasses.")
+elif weather == "rainy":
+    print("Don't forget your umbrella and a raincoat.")
+elif weather == "cold":
+    print("Make sure to wear a warm coat and a scarf.")
 else:
-    print("It's hot! Wear shorts and a tank top.")
+    print("Sorry, I don't have recommendations for this weather.")
