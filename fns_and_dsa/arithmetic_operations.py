@@ -4,8 +4,9 @@ def perform_operation(num1: float, num2: float, operation: str):
     """
     Perform basic arithmetic operations.
     operation must be one of: 'add', 'subtract', 'multiply', 'divide'.
-    For divide by zero, returns a special string.
+    Returns a numeric result or a specific error string for divide-by-zero.
     """
+    operation = operation.strip().lower()
     if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
